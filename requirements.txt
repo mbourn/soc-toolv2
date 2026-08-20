@@ -1,0 +1,4 @@
+requests>=2.28.0
+colorama>=0.4.6
+hashid>=3.1.4
+pypdns>=2.2.0
