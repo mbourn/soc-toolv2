@@ -47,8 +47,8 @@ Exactly one of `-i` / `-d` / `-H` / `-f` is required:
 python3 soc.py -i 8.8.8.8
 python3 soc.py -d example.com
 python3 soc.py -d https://example.com/path   # scheme/path retained for providers who want it
-python3 soc.py -H e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 python3 soc.py -f /path/to/sample.bin        # Makes a SHA-1 of the file, then looks it up
+python3 soc.py -H e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 ```
 
 ## Layout
