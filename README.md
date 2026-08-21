@@ -4,6 +4,7 @@ Terminal tool to quickly show OSINT reputation info about a provided IP, file ha
 This is an updated version of soc-tool.  As an exercise to learn how AI coding works and how
 AIs think, I used one to clean up the code, remove dead modules, add new modules, and make 
 tweaks that I had wanted to add for years but couldn't justify the time.
+![Terminal output](https://github.com/mbourn/soc-toolv2/blob/main/soc-02.png)
 
 ## Setup
 
@@ -15,7 +16,7 @@ pip install -r requirements.txt
 
 # Copy the example config and fill in API keys
 cp socVars.example.py socVars.py
-# edit socVars.py
+vim socVars.py  # because real ones use vim
 ```
 
 Provider signup links:
@@ -45,10 +46,9 @@ Exactly one of `-i` / `-d` / `-H` / `-f` is required:
 ```bash
 python3 soc.py -i 8.8.8.8
 python3 soc.py -d example.com
-python3 soc.py -d https://example.com/path   # scheme/path stripped for most providers;
-                                             # CheckPhish scans the original URL
+python3 soc.py -d https://example.com/path   # scheme/path retained for providers who want it
 python3 soc.py -H e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-python3 soc.py -f /path/to/sample.bin        # Makes a SHA-1 of the file, then look it up
+python3 soc.py -f /path/to/sample.bin        # Makes a SHA-1 of the file, then looks it up
 ```
 
 ## Layout
